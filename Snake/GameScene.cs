@@ -10,7 +10,7 @@ public class GameScene : Scene
     private Timer moveTimer;
     private Score score;
     private Snake_2 snake_2;
-
+    
     public GameScene()
     {
         int cellSize = 32;
@@ -19,7 +19,7 @@ public class GameScene : Scene
         apple = new Apple(grid);
         moveTimer = new Timer((float)snake.moveSpeed, OnMoveTimerTriggered);
         score = new Score();
-        snake_2 = new Snake_2(new Coordinates(), grid);
+        snake_2 = new Snake_2(new Coordinates(15,15), grid);
     }
 
     public override void Load()
@@ -32,7 +32,7 @@ public class GameScene : Scene
         snake.Move();
         snake_2.Move();
 
-        if (snake.IsCollidingWithSelf() || snake.IsOutOfBounds())
+        if (snake.IsCollidingWithSelf() || snake.IsOutOfBounds()|| snake.IsCollidingWithSnake_2(snake_2))
         {
             Console.WriteLine("GAME OVER !");
         }

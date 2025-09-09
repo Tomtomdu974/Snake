@@ -5,14 +5,13 @@ public class Snake
 {
     Grid<bool> grid;
 
-    Queue<Coordinates> body = new Queue<Coordinates>();
+    public Queue<Coordinates> body = new Queue<Coordinates>();
     Coordinates direction = Coordinates.right;
     Coordinates nextDirection;
 
     public Coordinates head => body.Last();
     public double moveSpeed { get; private set; } = .5;
     private bool isGrowing = false;
-
     public Snake(Coordinates start, Grid<bool> grid, int startSize = 3)
     {
         this.grid = grid;
@@ -50,6 +49,11 @@ public class Snake
     public bool IsCollidingWithSelf()
     {
         return body.Count != body.Distinct().Count(); // Check le nombre d'élément distinct et si aucun ne se touche c'est OK !
+    }
+
+    public bool IsCollidingWithSnake_2(Snake_2 snake_2)
+    {
+        return snake_2.body.Contains(head);
     }
 
     public bool IsOutOfBounds()

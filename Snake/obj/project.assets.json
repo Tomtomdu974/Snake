@@ -63,28 +63,36 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "raylib-cs >= 7.0.1"
+      "Raylib-cs >= 7.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thomas\\.nuget\\packages\\": {}
+    "C:\\Users\\ksnini\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gaming Campus\\Snake\\Snake.csproj",
+      "projectUniqueName": "C:\\Users\\ksnini\\Documents\\Gaming Campus\\Snake\\Snake.csproj",
       "projectName": "Snake",
-      "projectPath": "D:\\Gaming Campus\\Snake\\Snake.csproj",
-      "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-      "outputPath": "D:\\Gaming Campus\\Snake\\obj\\",
+      "projectPath": "C:\\Users\\ksnini\\Documents\\Gaming Campus\\Snake\\Snake.csproj",
+      "packagesPath": "C:\\Users\\ksnini\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ksnini\\Documents\\Gaming Campus\\Snake\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ksnini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -109,7 +117,7 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "raylib-cs": {
+          "Raylib-cs": {
             "target": "Package",
             "version": "[7.0.1, )"
           }
@@ -130,7 +138,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
